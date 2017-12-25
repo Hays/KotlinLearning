@@ -28,9 +28,5 @@ fun useRange(maxSize: Int): Int {
     if (maxSize !in 1..10) {
         size = 10
     }
-    var ret = 0
-    for (i in 1..size) {
-        ret += i*10
-    }
-    return ret
+    return (1..size).sumBy { it *10 }
 }

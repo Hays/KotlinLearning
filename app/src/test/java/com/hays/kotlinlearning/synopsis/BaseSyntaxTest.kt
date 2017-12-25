@@ -39,4 +39,11 @@ class BaseSyntaxTest {
         assertEquals(true, checkIsNotString(123))
         assertEquals(false, checkIsNotString("123"))
     }
+
+    @Test
+    fun testUseRange() {
+        assertEquals(550, useRange(20))
+        assertEquals(550, useRange(0))
+        assertEquals(150, useRange(5))
+    }
 }
